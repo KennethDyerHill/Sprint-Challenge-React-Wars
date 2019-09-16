@@ -1,17 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 
 
-export class LoadingButton extends Component {
-    render() {
-        return (
-            <Button onClick={this.props.onClick}>
-                Load more fantastic characters!
+function LoadingButton(props) {
+    return (
+        <Button onClick={props.onClick}>
+            Load more fantastic characters!
             </Button>
-        )
-    }
+    )
 }
 
 //PropTypes

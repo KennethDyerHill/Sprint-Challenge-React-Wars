@@ -1,17 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-export class CharacterField extends Component {
-    render() {
-        return (
-            <Div>
-                Name: {this.props.name} <br />
-                Gender: {this.props.gender} <br />
-                Birth Year: {this.props.birthYear} <br />
-            </Div>
-        )
-    }
+function CharacterField(props) {
+    return (
+        <Div>
+            Name: {props.name} <br />
+            Gender: {props.gender} <br />
+            Birth Year: {props.birthYear} <br />
+        </Div>
+    )
 }
 
 //PropTypes
